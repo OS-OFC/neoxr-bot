@@ -1,5 +1,5 @@
 exports.run = {
-   usage: ['apk'],
+   usage: ['apk2'],
    hidden: ['getapk'],
    use: 'query',
    category: 'downloader',
@@ -11,7 +11,7 @@ exports.run = {
       command
    }) => {
       try {
-         if (command == 'apk') {
+         if (command == 'apk2') {
             if (!text) return client.reply(m.chat, Func.example(isPrefix, command, 'fb lite'), m)
             client.sendReact(m.chat, '🕒', m.key)
             let json = await Api.apk(text)
