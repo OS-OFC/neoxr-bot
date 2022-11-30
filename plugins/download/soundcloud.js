@@ -1,8 +1,5 @@
 exports.run = {
-   usage: ['soundcloud'],
-   hidden: ['scdl'],
-   use: 'query / link',
-   category: 'downloader',
+   usage: ['soundcloud', 'scdl'],
    async: async (m, {
       client,
       text,
@@ -34,6 +31,6 @@ exports.run = {
    },
    error: false,
    cache: true,
-   limit: true,
+   quota: true,
    location: __filename
 }
